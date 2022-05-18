@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Comments from './Components/Comments';
+import pic1 from './img/babe.jpeg'
+import pic2 from './img/gent.jpeg'
+import pic3 from './img/ladygent.jpeg'
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Comments
+        name='Anne'
+        date='7:00PM' 
+        comment='I would like to suck your dick Alex'
+        pic={pic1}/>
+
+      <Comments 
+      name='James' 
+      date='6:15PM' 
+      comment='Guys, get a room'
+      pic={pic2}/>
+
+      <Comments 
+      name='Alex' 
+      date='9:00AM' 
+      comment='Come Gimme baby'
+      pic={pic3}/>
     </div>
   );
 }
