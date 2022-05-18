@@ -1,19 +1,20 @@
 import React from 'react'
+import {Card, Button} from 'react-bootstrap'
+import prof1 from '/home/nyawira/Documents/Personal projects/ReactPractice/practice/src/img/babe.jpeg'
+import {Add} from '@material-ui/icons'
 
-const UserCard = () => {
+const UserCard = (props) => {
   return (
     <div className='card'>
       <div className="content">
-        <Card className="text-center">
-            <Card.Header>Featured</Card.Header>
+        <Card style={{ width: '25rem' }}>
             <Card.Body>
-                <Card.Title>Special title treatment</Card.Title>
+                <Card.Title>Albina Nyawira</Card.Title>
                 <Card.Text>
-                With supporting text below as a natural lead-in to additional content.
+                  {props.children}
                 </Card.Text>
-                <Button variant="secondary">Add Friend</Button>
+                <Button variant="primary"><Add/> Add Friend</Button> 
             </Card.Body>
-            <Card.Footer className="text-muted">2 days ago</Card.Footer>
         </Card>
       </div>
     </div>

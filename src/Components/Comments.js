@@ -1,5 +1,4 @@
 import React from 'react'
-import profile1 from '/home/nyawira/Documents/Personal projects/ReactPractice/practice/src/img/babe.jpeg'
 
 const Comments = (props) => {
     console.log(props)
